@@ -8,6 +8,14 @@ let pI = Math.PI / 180;
 var ctx = canvas.getContext('2d');
 
 
+
+resize()
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize, false);
+
 let x = [];
 let y = [];
 let dx = [];
